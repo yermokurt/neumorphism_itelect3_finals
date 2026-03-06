@@ -9,7 +9,7 @@ const { updateProfile } = require('../controllers/usersController');
 // ─── Multer Storage Configuration (for profile pictures) ─────────
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'uploads/'); // Store images in the 'uploads/' folder
+        cb(null, path.join(__dirname, '../uploads')); // Store images in the 'uploads/' folder
     },
     filename: (req, file, cb) => {
         // Unique filename based on timestamp
