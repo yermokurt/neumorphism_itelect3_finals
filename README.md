@@ -7,7 +7,7 @@ A moderated community posting platform where users can publish posts, interact t
 ## Overview
 
 **PostPal** is a full-stack web application built with:
-- **Frontend**: React + Tailwind CSS (Glassmorphism UI)
+- **Frontend**: React + Tailwind CSS (Retro 3D Neumorphism UI)
 - **Backend**: Node.js + Express + MySQL
 
 Users can create posts (subject to admin approval), like posts, leave comments, and report inappropriate content. Admins have a dedicated dashboard for moderation and reports.
@@ -25,6 +25,7 @@ Users can create posts (subject to admin approval), like posts, leave comments, 
 - ✅ Comment on posts
 - ✅ Report posts (Spam, Harassment, Misinformation, Other)
 - ✅ View profile with personal stats and post history
+- ✅ Export personal activity and analytics as a generated PDF
 
 ### Admin Features
 - ✅ Approve or reject pending posts
@@ -33,6 +34,7 @@ Users can create posts (subject to admin approval), like posts, leave comments, 
 - ✅ Delete comments
 - ✅ Admin posts are auto-approved
 - ✅ Dashboard with platform statistics
+- ✅ Export platform analytics and moderation reports as a generated PDF
 
 ---
 
@@ -179,6 +181,7 @@ postpal/
     │       ├── CreatePostPage.js
     │       ├── ProfilePage.js
     │       ├── AdminModerationPage.js
-    │       └── ReportsPage.js
+    │       ├── ReportsPage.js
+    │       └── PdfReportPage.js
     └── tailwind.config.js
 ```
